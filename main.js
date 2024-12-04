@@ -1,12 +1,12 @@
 import opt from 'https://deivricardoss.github.io/optmization-js/src/index.js';
-const { getDOM } = opt;
+const { getDOM, setData } = opt;
 
 import { capaScreen } from './js/screens/capa.js';
 
-const site = {
-    body: getDOM('body')
-}
+const body = getDOM('body');
 
-capaScreen(site.body)
+setData('quest', 0);
 
-export default site;
+capaScreen(body);
+
+export default body;

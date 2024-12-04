@@ -1,3 +1,4 @@
+import resultScreen from "../screens/fim.js";
 export default function calcResult(quiz) {
     let noob = 0;
     let int = 0;
@@ -18,15 +19,15 @@ export default function calcResult(quiz) {
                         break;
                 }
             }
-        })
+        });
     });
     
     if(noob > int && noob > pro) {
-        alert("Que Noob");
+        resultScreen("noob");
     } else if (int > noob && int > pro) {
-        alert("Intermediário")
+        resultScreen("intermediario");
     } else if (pro > int && pro > noob) {
-        alert("Que Pro")
+        resultScreen("pro");
     } else {
         alert("Intermediário")
     }
