@@ -4,6 +4,7 @@ const { getData, setData, getDOM, on, getDOMAll } = opt;
 import calcResult from '../quiz/calcResult.js'
 import quiz from "../quiz/quiz.js";
 import body from '../../main.js';
+import { porcentagem } from '../calc.js';   
 
 
 
@@ -14,6 +15,9 @@ export function rodar() {
 
     let quest = Number(getData('quest'));
     body.innerHTML = `
+        <div class="loading">
+            <div style="width:${porcentagem(quiz.quest.length, quest)}%"></div>
+        </div>
         <div id="enum">
             <h2>${quiz.quest[quest].enun}</h2>
             <h3><spam>0</spam>/${quiz.quest[quest].limite}</h3>
