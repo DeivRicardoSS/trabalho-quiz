@@ -1,4 +1,6 @@
 import body from "../../main.js";
+import opt from 'https://deivricardoss.github.io/optmization-js/src/index.js';
+const { getData } = opt;
 
 export default function resultScreen(result) {
     let img = result === 'noob' ? 'https://media.tenor.com/wnDCvmiLwFEAAAAM/this-is-me-when-im-dumb-and-noob-on-minecraft.gif' : result === 'intermediario' ? 'https://i.pinimg.com/originals/c8/75/aa/c875aa0b0eafe89e6466346e37e34387.gif' : 'https://i.makeagif.com/media/8-15-2019/UQSmZD.gif';
@@ -13,11 +15,11 @@ export default function resultScreen(result) {
     }
     let h2 = () =>{
         if(result === 'noob'){
-            return 'Que noob, vamos estudar mais para ser um pro'
+            return `Que noob ${getData('usuario')}, vamos estudar mais para ser um pro.`
         }else if(result === 'intermediario'){
-            return 'Que intermediario, vamos estudar mais para ser um pro'
+            return `Que intermediario ${getData('usuario')}, vamos estudar mais para ser um pro`
         }else{
-            return 'Que pro! Você já domina esse jogo! Parabéns!'
+            return `Que pro ${getData('usuario')}! Você já domina esse jogo! Parabéns!`
         }
     }
     
