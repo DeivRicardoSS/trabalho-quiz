@@ -1,4 +1,4 @@
-import opt from 'https://deivricardoss.github.io/optmization-js/src/index.js';
+import opt from 'http://deivyson.me/optmization-js/src/index.js';
 const { getDOM, getDOMValue, setData, getData } = opt;
 
 class User {

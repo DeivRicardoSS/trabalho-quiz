@@ -1,5 +1,5 @@
 import body from "../../main.js";
-import opt from 'https://deivricardoss.github.io/optmization-js/src/index.js';
+import opt from 'http://deivyson.me/optmization-js/src/index.js';
 const { getData } = opt;
 
 export default function resultScreen(result) {

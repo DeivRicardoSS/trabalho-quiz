@@ -1,4 +1,4 @@
-import opt from 'https://deivricardoss.github.io/optmization-js/src/index.js';
+import opt from 'http://deivyson.me/optmization-js/src/index.js';
 const { getData, setData, getDOM, on, getDOMAll } = opt;
 
 import calcResult from '../quiz/calcResult.js'
